@@ -1,14 +1,15 @@
 @font-face {
-	font-family: 'Defaults';
-	src: url('../Defaults.eot?rfa9z8');
-	src: url('../Defaults.eot?#iefixrfa9z8') format('embedded-opentype'), url('../Defaults.woff?rfa9z8') format('woff'), url('../Defaults.ttf?rfa9z8') format('truetype'), url('../Defaults.svg?rfa9z8#Defaults') format('svg');
+	font-family: "Defaults";
+	src: url("../Defaults.eot?rfa9z8");
+	src: url("../Defaults.eot?#iefixrfa9z8") format("embedded-opentype"), url("../Defaults.woff?rfa9z8") format("woff"),
+		url("../Defaults.ttf?rfa9z8") format("truetype"), url("../Defaults.svg?rfa9z8#Defaults") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
 
 [class^="Defaults-"],
 [class*=" Defaults-"] {
-	font-family: 'Defaults';
+	font-family: "Defaults";
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
