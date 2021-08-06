@@ -1031,7 +1031,7 @@
 									NHU CẦU CỦA BẠN
 								</h2>
 								<div class="main-form">
-									<form>
+									<form id="contactForm" name="contact" method="POST" data-netlify="true">
 										<div class="form-row">
 											<div class="form-group col-md-4">
 												<input
@@ -1064,6 +1064,8 @@
 										<div class="form-row">
 											<div class="form-group col-md-12">
 												<textarea
+													id="message"
+													name="message"
 													class="form-control"
 													rows="5"
 													placeholder="Vui lòng nhập nội dung cần liên hệ*"
@@ -1073,7 +1075,7 @@
 
 										<div class="text-center">
 											<button
-												href="#"
+												id="submitContact"
 												class="btn btn-outline-success my-2 my-sm-0 btn-contact btn-all"
 												type="submit"
 											>
@@ -1081,6 +1083,7 @@
 											</button>
 										</div>
 									</form>
+									<script src="./js/contact.js"></script>
 								</div>
 							</div>
 						</div>
