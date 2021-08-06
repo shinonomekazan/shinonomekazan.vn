@@ -15,7 +15,7 @@ contactForm.addEventListener("submit", (e) => {
 		contactForm.querySelector("#email").value = "";
 		contactForm.querySelector("#question").value = "";
 		contactForm.querySelector("#message").value = "";
-		alert("Sent.");
+		alert("Đã gửi yêu cầu thành công. Cảm ơn bạn đã liên hệ với chúng tôi.");
 	}).catch((error) => {
 		alert(error);
 		contactForm.querySelector("#submitContact").disabled = false;
