@@ -1,6 +1,6 @@
 # CloudFlareについての評価
 
-- 　CloudFlare Pagesについての評価に行く前に、CloudFlareに関するいくつかの情報を紹介する。
+- CloudFlare Pagesについての評価に行く前に、CloudFlareに関するいくつかの情報を紹介する。
 
 
 ![cloudFlare](https://blog-cloudflare-com-assets.storage.googleapis.com/2019/07/cf-logo-social-media.png)
@@ -8,29 +8,29 @@
 
 ### 1. CloudFlareとは？
 
-- 　CloudFlareは、CloudFlareの保護レイヤーによってサーバーとクライアント間のトラフィックを管理するDNSサービスを提供している。
+- CloudFlareは、CloudFlareの保護レイヤーによってサーバーとクライアント間のトラフィックを管理するDNSサービスを提供している。
 
-- 　トラフィックは、DNSのドメイン名解決サーバーに直接行くのではなく、CloudFlareのドメイン名解決サーバーに行ってWebサイトのデータを見る。
+- トラフィックは、DNSのドメイン名解決サーバーに直接行くのではなく、CloudFlareのドメイン名解決サーバーに行ってWebサイトのデータを見る。
 
-- 　CloudFlareはCDNに似た技術を使用していると言われているが、従来のCDNとは違う。CloudFlareは、キャッシングリバースプロキシとしてより正確に述べられている。 CloudFlareはウェブサイトへのすべてのリクエストを処理する。
+- CloudFlareはCDNに似た技術を使用していると言われているが、従来のCDNとは違う。CloudFlareは、キャッシングリバースプロキシとしてより正確に述べられている。 CloudFlareはウェブサイトへのすべてのリクエストを処理する。
 
 ### 2. CloudFlareのメリットとデメリット
 
 #### 2.1  メリット
 
--	コンテンツをキャッシュすることでWebサイトの表示速度を高速化すること
+- コンテンツをキャッシュすることでWebサイトの表示速度を高速化すること
 
--	帯域幅を節約できること（CloudFlareがサーバーへの直接アクセスを制限しているため）。導入前の２分の１または３分の１程度に抑える。
+- 帯域幅を節約できること（CloudFlareがサーバーへの直接アクセスを制限しているため）。導入前の２分の１または３分の１程度に抑える。
 
--	セキュリティ機能を強化すること（指定国からのアクセス制限、不明IPからのアクセス禁止、Webサイトのファイアウォール、ログイン機能の厳重な保護に対応するProパッケージ）
+- セキュリティ機能を強化すること（指定国からのアクセス制限、不明IPからのアクセス禁止、Webサイトのファイアウォール、ログイン機能の厳重な保護に対応するProパッケージ）
 
 #### 2.2 デメリット
 
-- 　CloudFlareの稼働時間（アップタイム）に完全に依存すること（CloudFlareが落ちると、サイトが見れなくなる）
+- CloudFlareの稼働時間（アップタイム）に完全に依存すること（CloudFlareが落ちると、サイトが見れなくなる）
 
-- 　ウェブのIPを公開しないことは、メリットであると同時に、セキュリティがよくないと簡単に攻撃されるデメリットもある
+- ウェブのIPを公開しないことは、メリットであると同時に、セキュリティがよくないと簡単に攻撃されるデメリットもある
 
-- 　ホスティングのFireWallを使うと、攻撃サイトと誤解されやすく、そのためウェブサイトがオフラインになりやすいこと
+- ホスティングのFireWallを使うと、攻撃サイトと誤解されやすく、そのためウェブサイトがオフラインになりやすいこと
 
 
 ### 3. CloudFlareの導入の検討
@@ -47,9 +47,9 @@
 
 #### 4.1 CloudFlare Pagesの概要　
  
- - 　最近、Cloudflareは、無料のCloudflare Pagesサービスをリリースしたところである。これはNetlifyと似たような機能が備わって、近い将来Netlifyと競合できるように設定されている。
+ - 最近、Cloudflareは、無料のCloudflare Pagesサービスをリリースしたところである。これはNetlifyと似たような機能が備わって、近い将来Netlifyと競合できるように設定されている。
  
- - 　Cloudflare Pagesはpages.devというデフォルトのURLを提供している。アプリにカスタムドメインを設定しない場合、Cloudflare PagesサイトのURLはhttps://your-github-repo.pages.dev. のようになる。
+ - Cloudflare Pagesはpages.devというデフォルトのURLを提供している。アプリにカスタムドメインを設定しない場合、Cloudflare PagesサイトのURLはhttps://your-github-repo.pages.dev. のようになる。
 
 #### 4.2 NetifyとCloudFlare pagesの比較表
 
@@ -109,11 +109,11 @@ Netifyも同様のサービスプランをより安価に提供しているが�
 
 #### 5.3 有料プランの評価
 
-- 　まず、サポート（帯域幅やセキュリティの面、その他の要因など）をより多く受けるために、検討の上、有料プランの導入に切り替えたほうが良いかと思う。
+- まず、サポート（帯域幅やセキュリティの面、その他の要因など）をより多く受けるために、検討の上、有料プランの導入に切り替えたほうが良いかと思う。
 
-- 　有料プランを導入の場合でもNetifyとCloudFlareでは料金が異なる。CloudFlareプランはNetifyよりも高価になるが、CloudFlareプランを導入の場合、Netifyのビジネスプランで1.5TBに制限されていることに対し、CloudFlareは無制限の帯域幅を利用することができる（さらにCloudFlareは帯域幅の節約にも対応できる）。
+- 有料プランを導入の場合でもNetifyとCloudFlareでは料金が異なる。CloudFlareプランはNetifyよりも高価になるが、CloudFlareプランを導入の場合、Netifyのビジネスプランで1.5TBに制限されていることに対し、CloudFlareは無制限の帯域幅を利用することができる（さらにCloudFlareは帯域幅の節約にも対応できる）。
 
-- 	CloudFlareのFirewallによるセキュリティレベルは、CloudFlareへの切り替えを検討する重要な要素である。
+- CloudFlareのFirewallによるセキュリティレベルは、CloudFlareへの切り替えを検討する重要な要素である。
 
 **結論から言うと NetifyからCloudFlareへ切り替えについて検討することが可能です（有料プランを推奨）**
 
