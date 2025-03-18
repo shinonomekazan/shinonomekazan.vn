@@ -2,11 +2,17 @@ const contactForm = document.querySelector("#contactForm");
 contactForm.addEventListener("submit", (e) => {
 	e.preventDefault();
 	contactForm.querySelector("#submitContact").disabled = true;
-	const formData = new FormData(contactForm);
-	fetch("/", {
+	const formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("question").value,
+        message: document.getElementById("message").value,
+    };
+	console.log(JSON.stringify(formData));
+	fetch("https://shinonomekazanvn.chinh-94f.workers.dev/", {
 		method: "POST",
 		headers: { "Content-Type": "application/x-www-form-urlencoded" },
-		body: new URLSearchParams(formData).toString(),
+		body: JSON.stringify(formData),
 	})
 		.then((ret) => {
 			if (ret.status >= 300) {
