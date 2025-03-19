@@ -9,9 +9,7 @@
 		"lint:fix": "npm run prettier:write",
 		"lint": "npm run prettier:check",
 		"test": "npm run lint",
-		"deploy": "wrangler deploy",
-		"dev": "wrangler dev",
-		"start": "wrangler dev"
+		"start": "node start.js"
 	},
 	"repository": {
 		"type": "git",
@@ -27,8 +25,6 @@
 		"fastify": "^3.20.1",
 		"fastify-static": "^4.2.3",
 		"jest": "^29.7.0",
-		"prettier": "^2.3.2",
-		"@cloudflare/vitest-pool-workers": "^0.7.5",
-		"wrangler": "^4.1.0"
+		"prettier": "^2.3.2"
 	}
 }

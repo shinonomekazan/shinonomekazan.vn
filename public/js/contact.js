@@ -3,11 +3,11 @@ contactForm.addEventListener("submit", (e) => {
 	e.preventDefault();
 	contactForm.querySelector("#submitContact").disabled = true;
 	const formData = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        phone: document.getElementById("question").value,
-        message: document.getElementById("message").value,
-    };
+		name: document.getElementById("name").value,
+		email: document.getElementById("email").value,
+		phone: document.getElementById("question").value,
+		message: document.getElementById("message").value,
+	};
 	console.log(JSON.stringify(formData));
 	fetch("https://shinonomekazanvn.chinh-94f.workers.dev/", {
 		method: "POST",
